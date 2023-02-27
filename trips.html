@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <title>About Brittany</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8903b1fcf1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"<img src="pics/catbackground.jpg" />
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-face-smile" onclick = "hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="movies.html">MOVIES AND BOOKS</a></li>
+                <li><a href="pets.html">PETS</a></li>
+                <li><a href="trips.html">TRIPS</a></li>
+                <li><a href="podcasts.html">PODCASTS</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick ="showMenu()"></i>
+        </nav>
+        <h1>Adventures</h1>
+    </section>
+
+    <!----------trips-------->
+    <section class="Trips">
+        <h1>Some of my trips!</h1>
+        <p>The journey is always just as fun as the destination</p>
+        <div class="row">
+            <div class="Trips-col">
+                <img src="pics/parasail.JPG" />
+                <h3>California Parasailing: 10/10 So much fun!</h3>
+            </div>
+            <div class="Trips-col">
+                <img src="pics/cruise2.jpg" />
+                <h3>My very first cruise: Got to explore so many areas! Had the best time!</h3>
+            </div>
+            <div class="Trips-col">
+                <img src="pics/grand.PNG" />
+                <h3>Grand Canyon: A lot to see on this trip! Will be going back at some point!</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-------footer-------->
+    <section class="footer">
+        <h4>About Me</h4>
+        <p>Hi! My name Is Brittany and from my website you are able to see some of my favorite things, so you know all about me right? Well I guess some little paragraphs of things I like isn't going to tell you all about me but you may have an idea. Some things I didn't include is I'm currently a student at Tech Elevator and I enjoy so much about it and will continue to use my knowledge to keep creating things. This is just the beginning and I can't wait to see what I'm able to make in the future!</p>
+        <div class="icons">
+            <i class="fa fa-linkedin"></i>
+            <i class="fa-solid fa-at"></i>
+        </div>
+    </section>
+
+    <!----------JavaScript for Toggle Menu---------->
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

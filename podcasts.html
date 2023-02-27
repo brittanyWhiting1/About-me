@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <title>About Brittany</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8903b1fcf1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"<img src="pics/catbackground.jpg" />
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-face-smile" onclick = "hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="movies.html">MOVIES AND BOOKS</a></li>
+                <li><a href="pets.html">PETS</a></li>
+                <li><a href="trips.html">TRIPS</a></li>
+                <li><a href="podcasts.html">PODCASTS</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick ="showMenu()"></i>
+        </nav>
+        <h1>Podcasts</h1>
+    </section>
+
+    <!----------podcasts-------->
+    <section class="Podcasts">
+        <h1>My favorite podcasts</h1>
+        <p>Whether it's a long road trip or my drive to school you will catch me listening to podcasts, mostly true crime!</p>
+        <div class="row"></div>
+        <div class="Podcasts-col">
+            <img src="pics/cultliter.jpg" />
+            <p>Cult Liter:  My go to podcast. Host Spencer Henry dives into stories of cults, crimes, televangelists, and much much more. He is great at what he does and I look foward to hear a new episode each week.</p>
+        </div>
+        <div class="Podcasts-col">
+            <img src="pics/milehigher.jpg" />
+            <p>Mile Higher Podcast:  Hosts Kendall Rae and Husband Josh Thomas, focuses on True Crime but they delve into many other topics including conspiracy theories, unexplained phenomena, metaphysics, futurism, ancient civilizations and news stories the mainstream media doesn't cover. Another podcast I can't get enough of.</p>
+        </div>
+    </section>
+
+    <!-------footer-------->
+    <section class="footer">
+        <h4>About Me</h4>
+        <p>Hi! My name Is Brittany and from my website you are able to see some of my favorite things, so you know all about me right? Well I guess some little paragraphs of things I like isn't going to tell you all about me but you may have an idea. Some things I didn't include is I'm currently a student at Tech Elevator and I enjoy so much about it and will continue to use my knowledge to keep creating things. This is just the beginning and I can't wait to see what I'm able to make in the future!</p>
+        <div class="icons">
+            <i class="fa fa-linkedin"></i>
+            <i class="fa-solid fa-at"></i>
+        </div>
+    </section>
+
+    <!----------JavaScript for Toggle Menu---------->
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

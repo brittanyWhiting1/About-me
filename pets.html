@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <title>About Brittany</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8903b1fcf1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"<img src="pics/catbackground.jpg" />
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-face-smile" onclick = "hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="movies.html">MOVIES AND BOOKS</a></li>
+                <li><a href="pets.html">PETS</a></li>
+                <li><a href="trips.html">TRIPS</a></li>
+                <li><a href="podcasts.html">PODCASTS</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick ="showMenu()"></i>
+        </nav>
+       <h1>My Pets!</h1>
+    </section> 
+    
+    <!----------pets-------->
+    <section class="Pets">
+        <h1>Here are my fur babies</h1>
+        <div class="row">
+            <div class="Pets-col">
+                <img src="pics/newmocha.jpg" />
+                <div class="layer">
+                    <h3>Mocha: She is almost 3 years old and the sweetest girl. She is the sister to Floofy and LOVES all the pat pats she can have</h3>
+
+                </div>
+            </div>
+            <div class="Pets-col">
+                <img src="pics/youngdumpy.jpg" />
+                <div class="layer">
+                    <h3>Dumpling a.k.a DumDum: The trouble maker of the group. He is 2 years old and can't get enough of his brother Reggie. Will continue to ignore you when he is being bad</h3>
+                </div>
+            </div>
+            <div class="Pets-col">
+                <img src="pics/reggieteeth.jpg" />
+                <div class="layer">
+                    <h3>Reggie: He is a 1 year old big boy. Loves play time and attention. Will do anything for a treat</h3>
+                </div>
+            </div>
+            <div class="Pets-col">
+                <img src="pics/bloo.jpg" />
+                <div class="layer">
+                    <h3>Bloo: He is 7 years old and for sure has fun playing around with toys but also keeps the yougins in their places</h3>
+                </div>
+            </div>
+            <div class="Pets-col">
+                <img src="pics/floof.jpg" />
+                <div class="layer">
+                    <h3>Floofy: She is attached to Bloo's hip and loves to sun bathe. Is a very shy girl just like her momma!</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-------footer-------->
+    <section class="footer">
+        <h4>About Me</h4>
+        <p>Hi! My name Is Brittany and from my website you are able to see some of my favorite things, so you know all about me right? Well I guess some little paragraphs of things I like isn't going to tell you all about me but you may have an idea. Some things I didn't include is I'm currently a student at Tech Elevator and I enjoy so much about it and will continue to use my knowledge to keep creating things. This is just the beginning and I can't wait to see what I'm able to make in the future!</p>
+        <div class="icons">
+            <i class="fa fa-linkedin"></i>
+            <i class="fa-solid fa-at"></i>
+        </div>
+    </section>
+
+    <!----------JavaScript for Toggle Menu---------->
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
