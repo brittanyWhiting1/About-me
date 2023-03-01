@@ -28,9 +28,9 @@
         </div>
         <i class="fa-solid fa-bars" onclick ="showMenu()"></i>
         </nav>
-       <h1>My Pets!</h1>
-    </section> 
-    
+        <h1>My Pets!</h1>
+    </section>
+
     <!----------pets-------->
     <section class="Pets">
         <h1>Here are my fur babies</h1>
@@ -69,6 +69,40 @@
         </div>
 
     </section>
+
+    <!----Photos----->
+    <div class="slider">
+        <div class="img-box">
+            <img src="pics/b.jpg" class="slider-img" />
+        </div>
+        <!----next and prev button----->
+        <button class="btn" onclick="prev()">Prev</button>
+        <button class="btn" onclick="next()">Next</button>
+    </div>
+
+    <script>
+        var slider_img = document.querySelector('.slider-img');
+        var pics = ['b.jpg', 'c.JPG', 'd.jpg', 'e.jpg', 'f.JPG', 'g.jpg', 'h.JPG', 'i.jpg', 'j.jpg', 'k.jpg', 'l.jpg', 'm.jpg', 'n.jpg', 'o.jpg', 'p.jpg', 'q.JPG','r.PNG', 's.JPG','t.jpg', 'u.JPG', 'v.jpg', 'w.jpg', 'x.jpg', 'y.jpg', 'z.jpg', '1.jpg', '2.jpg']; //adding the pics to the slider
+        var i = 0; //current image index
+
+        function prev() { //if prev button is hit then the photos will go back
+            if (i <= 0) i = pics.length;
+            i--;
+            return setImg(i);
+        }
+
+
+        function next() { //if next button is hit then the photos go forward
+            if (i >= pics.length - 1) i = -1;
+            i++;
+            return setImg(i);
+        }
+
+        function setImg(i) { //method to call that will take a string and the pics album plus the name of the file 
+            return slider_img.setAttribute('src', 'pics/' + pics[i]);
+        }
+    </script>
+
     <!-------footer-------->
     <section class="footer">
         <h4>About Me</h4>
